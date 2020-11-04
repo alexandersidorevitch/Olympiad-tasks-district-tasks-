@@ -5,13 +5,13 @@
 using namespace std;
 
 //удаление пробелов из начала и конца строки
-string trim(string text, char whitestring = ' ')
+string strip(string text, char whitestring = ' ')
 {
 	while (text[0] == whitestring)
 	{
 		text.erase(text.begin());
 	}
-	while (text[0] == whitestring)
+	while (text[text.length() - 1] == whitestring)
 	{
 		text.erase(text.end());
 	}
@@ -27,6 +27,6 @@ int main()
 	cin >> text;
 
 	//Меняем все вхождения подстроки WUB которые идут подряд
-	cout << trim(regex_replace(text, r, " "));
+	cout << strip(regex_replace(text, r, " "));
 
 }
