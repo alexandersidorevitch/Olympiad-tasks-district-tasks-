@@ -1,0 +1,4 @@
+﻿  141A.cpp
+C:\Users\asus\source\repos\141A\141A\141A.cpp(12,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\asus\source\repos\141A\141A\141A.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+  141A.vcxproj -> C:\Users\asus\source\repos\141A\Debug\141A.exe
