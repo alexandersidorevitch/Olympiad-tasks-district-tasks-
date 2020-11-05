@@ -15,6 +15,7 @@ void countOfWins(string outcomesOfChessMatches, int& countWinsAnton, int& countW
 		}
 	}
 }
+
 int main()
 {
 	int tmp;
