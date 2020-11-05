@@ -8,46 +8,46 @@ int indexOfElement(string text, char ch) {
 }
 
 //Проверяем включает ли третье слово все буквы из первого и второго слова
-bool isInclude(string firstName, string secondName, string lettersInHead) {
+bool isInclude(string firstName, string secondName, string lettersInHeap) {
 	int index;
 	//Проверяем во все ли буквы из первого слова есть в третьем слове
 	for (int i = 0; i < firstName.length(); i++)
 	{
-		index = indexOfElement(lettersInHead, firstName[i]);
+		index = indexOfElement(lettersInHeap, firstName[i]);
 		if (index == -1)
 		{
 			return false;
 		}
 		else
 		{
-			lettersInHead.erase(lettersInHead.begin() + index);
+			lettersInHeap.erase(lettersInHeap.begin() + index);
 		}
 	}
 
 	//Проверяем во все ли буквы из второго слова есть в третьем слове
 	for (int i = 0; i < secondName.length(); i++)
 	{
-		index = indexOfElement(lettersInHead, secondName[i]);
+		index = indexOfElement(lettersInHeap, secondName[i]);
 		if (index == -1)
 		{
 			return false;
 		}
 		else
 		{
-			lettersInHead.erase(lettersInHead.begin() + index);
+			lettersInHeap.erase(lettersInHeap.begin() + index);
 		}
 	}
 	return true;
 }
 int main()
 {
-	string firstName, secondName, lettersInHead;
+	string firstName, secondName, lettersInHeap;
 
 	cin >> firstName;
 	cin >> secondName;
-	cin >> lettersInHead;
+	cin >> lettersInHeap;
 
-	if (isInclude(firstName, secondName, lettersInHead))
+	if (isInclude(firstName, secondName, lettersInHeap))
 	{
 		cout << "YES";
 	}
