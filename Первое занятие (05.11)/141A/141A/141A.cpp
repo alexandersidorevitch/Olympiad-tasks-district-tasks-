@@ -37,7 +37,9 @@ bool isInclude(string firstName, string secondName, string lettersInHeap) {
 			lettersInHeap.erase(lettersInHeap.begin() + index);
 		}
 	}
-	return true;
+	//0 = false, любое другое число = true, т.е. если строка пустая, то (bool) lettersInHeap.length() = false,
+	//а not (bool) lettersInHeap.length() = true. P.s. неявное приведение типов делает сам c++.
+	return not lettersInHeap.length();
 }
 int main()
 {
