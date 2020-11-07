@@ -1,10 +1,13 @@
 ﻿#include <iostream>
 #include <string>
+#define sizeAlphabet 26
+
 using namespace std;
+
 //Инициализация английского алфавита
 char* GetAlphabet() {
-	char* Alphabet = new char[26];
-	for (int i = 0; i < 26; i++)
+	char* Alphabet = new char[sizeAlphabet];
+	for (int i = 0; i < sizeAlphabet; i++)
 	{
 		Alphabet[i] = char(i + 97);
 	}
