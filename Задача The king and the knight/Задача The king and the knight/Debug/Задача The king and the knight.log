@@ -1,2 +1,4 @@
 ﻿  Задача The king and the knight.cpp
+C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача The king and the knight\Задача The king and the knight\Задача The king and the knight.cpp(30,6): warning C4101: newPosKhightY: неиспользованная локальная переменная
+C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача The king and the knight\Задача The king and the knight\Задача The king and the knight.cpp(29,6): warning C4101: newPosKhightX: неиспользованная локальная переменная
   Задача The king and the knight.vcxproj -> C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача The king and the knight\Debug\Задача The king and the knight.exe
