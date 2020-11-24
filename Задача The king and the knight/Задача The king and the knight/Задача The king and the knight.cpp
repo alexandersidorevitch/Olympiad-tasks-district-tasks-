@@ -11,25 +11,16 @@
 using namespace std;
 
 char moveKnight(pii posKing, pii posKhight, vector<pii> movesKnight) {
-	for (auto move: movesKnight)
+	if ((abs(posKhight.first - posKing.first) == 1 && abs(posKhight.second  - posKing.second) == 2) || (abs(posKhight.first - posKing.first) == 2 && abs(posKhight.second - posKing.second) == 1))
 	{
-		if (posKhight.first + move.first == posKing.first && posKhight.second + move.second == posKing.second)
-		{
-			return 'Y';
-		}
+		return 'Y';
 	}
 	return 'N';
 }
 char moveKing(pii posKing, pii posKhight) {
-	for (int i = -1; i <= 1; i++)
+	if (abs(posKing.first - posKhight.first) <= 1 && abs(posKing.second - posKhight.second) <= 1)
 	{
-		for (int j = -1; j <= 1; j++)
-		{
-			if (posKing.first + i == posKhight.first && posKing.second + j == posKhight.second)
-			{
-				return 'Y';
-			}
-		}
+		return 'Y';
 	}
 	return 'N';
 }
@@ -43,7 +34,7 @@ char moveKnightDouble(pii posKing, pii posKhight, vector<pii> movesKnight) {
 		{
 			newPosKhightX = posKhight.first + moveFirst.first;
 			newPosKhightY = posKhight.second + moveFirst.second;
-			if ((newPosKhightX >= 0 && newPosKhightX <= 7 ) && newPosKhightX + moveSecond.first == posKing.first  && ( newPosKhightY >= 0 && newPosKhightY <= 7) && newPosKhightY + moveSecond.second == posKing.second)
+			if ((newPosKhightX >= 0 && newPosKhightX <= 7) && newPosKhightX + moveSecond.first == posKing.first && (newPosKhightY >= 0 && newPosKhightY <= 7) && newPosKhightY + moveSecond.second == posKing.second)
 			{
 				return 'Y';
 			}
@@ -52,21 +43,9 @@ char moveKnightDouble(pii posKing, pii posKhight, vector<pii> movesKnight) {
 	return 'N';
 }
 char moveKingDouble(pii posKing, pii posKhight) {
-	for (int iFirst = -1; iFirst <= 1; iFirst++)
+	if (abs(posKing.first - posKhight.first) <= 2 && abs(posKing.second - posKhight.second) <= 2)
 	{
-		for (int jFirst = -1; jFirst <= 1; jFirst++)
-		{
-			for (int iSecond = -1; iSecond <= 1; iSecond++)
-			{
-				for (int jSecond = -1; jSecond <= 1; jSecond++)
-				{
-					if (posKing.first + iFirst + iSecond == posKhight.first && posKing.second + jFirst + jSecond == posKhight.second)
-					{
-						return 'Y';
-					}
-				}
-			}
-		}
+		return 'Y';
 	}
 	return 'N';
 }
