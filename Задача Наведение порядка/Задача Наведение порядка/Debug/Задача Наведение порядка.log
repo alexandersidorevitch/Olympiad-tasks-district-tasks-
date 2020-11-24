@@ -1,0 +1,4 @@
+﻿  Задача Наведение порядка.cpp
+C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача Наведение порядка\Задача Наведение порядка\Задача Наведение порядка.cpp(15,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача Наведение порядка\Задача Наведение порядка\Задача Наведение порядка.cpp(20,18): warning C4101: tmp: неиспользованная локальная переменная
+  Задача Наведение порядка.vcxproj -> C:\Users\asus\source\repos\Olympiad-tasks-district-tasks-\Задача Наведение порядка\Debug\Задача Наведение порядка.exe
